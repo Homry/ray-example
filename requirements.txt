@@ -2,6 +2,8 @@ ray[tune]
 ray[rllib]
 ray[serve]
 pyglet
-torch==1.8.2
+torch
 torchvision
 torchaudio
+duckietown-gym-daffy
+seaborn
