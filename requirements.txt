@@ -1,0 +1,7 @@
+ray[tune]
+ray[rllib]
+ray[serve]
+pyglet
+torch==1.8.2
+torchvision
+torchaudio
