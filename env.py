@@ -1,9 +1,12 @@
+import pyglet
+pyglet.window.Window()
+
 import gym
 from gym_duckietown.simulator import Simulator
 from wrappers import *
 from rewardWrapper import DtRewardWrapperDistanceTravelled
 
-def launch_env():
+def launch_env(env_config, default_env_id=0):
     env = Simulator(
         seed=5123123,  # random seed
         map_name="loop_empty",
@@ -21,3 +24,4 @@ def launch_env():
     env = DtRewardWrapperDistanceTravelled(env)
 
     return env
+
